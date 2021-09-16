@@ -288,7 +288,7 @@
 			html.attr( 'src', '//view.vzaar.com/' + video.id + '/player?autoplay=true' );
 		}
 
-		iframe = $(html).wrap( '<div class="owl-video-frame" />' ).insertAfter(item.find('.owl-video'));
+		iframe = html.insertAfter(item.find('.owl-video')).wrap( '<div class="owl-video-frame"></div>' );
 
 		this._playing = item.addClass('owl-video-playing');
 	};
